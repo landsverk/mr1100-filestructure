@@ -1,0 +1,147 @@
+<!DOCTYPE html><html lang="en-US" class="c_ui_initialized false c_ui_lcd_uistate Startup">
+
+<!--text5nowarn=%2Fstatic%2Flcd%2Fcss%2Fstyles.css&output=var8▒textnowarn=ltr&output=var7▒▒session.langop=match&pattern=ar_AR@▒text9nowarn=%2Fstatic%2Flcd%2Fcss%2Fstyles_rtl.css&output=var8▒textnowarn=rtl&output=var7-->
+
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>NETGEAR</title>
+        <style>
+            /*  */
+
+            html {
+                /*background-color:#42164f;*/
+                background-color:#000;
+            }
+            body {
+                width:320px;
+                height:240px;
+                overflow:hidden;
+                /*background-color:#42164f;*/
+                background-color:#000;
+            }
+           /* */
+        </style>
+        <link rel="stylesheet" href="var8▒">
+        <script src="js/NetgearStrings.js"></script>
+        <script src="/static/lcd/js/script.js"></script>
+
+
+    </head>
+    <body class="" dir="var7~P">
+
+        <div id="main_display"> <div id="main" class="c_device_setupCompleted"> <div id="notification_interface"> <ul id="notifications">
+
+        <li id="WebUI"> <h4>Welcome to the Nighthawk Mobile Router</h4> <p>Tap the power button to cycle through the screens.</p> </li>
+
+
+        <!-- artf45399: [MR1100][LCDUI] Need to support long-hold gesture for FOTA messages --> <!-- FWUpdateError must be on top -->
+
+        <li id="FWUpdateError"> <h4>Update Error</h4> <p>An update error occurred. Please try again later.</p> </li>
+
+        <li id="SimNotProvisioned"> <h4>Registration Error</h4> <p>SIM not provisioned - MM#2</p> </li> <li id="SimNotAllowed"> <h4>Registration Error</h4> <p>SIM not allowed - MM#3</p> </li> <li id="CallFailed"> <h4>Registration Error</h4> <p>Call Failed - MM#5</p> </li> <li id="PhoneNotAllowed"> <h4>Registration Error</h4> <p>Phone not allowed - MM#6</p> </li> <li id="UnknownAPN"> <h4>Registration Error</h4> <p>Missing or unknown APN - MM#27</p> </li> <li id="AuthenticationFailed"> <h4>Registration Error</h4> <p>User authentication failed - MM#29</p> </li> <li id="ServiceUnsubscribed"> <h4>Registration Error</h4> <p>Requested service option not subscribed - MM#33</p> </li> <li id="NetworkFailure"> <h4>Registration Error</h4> <p>Network failure - MM#38</p> </li> <li id="OffloadIPConflict"> <h4>Networking Error</h4> <p>Data offloading disabled due to IP Address conflict. Go to <span class='m_router_hostUrl'></span> to configure a unique subnet.</p> </li> <li id="BattHeatStopCharging"> <div class="container"> <span id="chargingStoppedNotify" class="c_power_charging">heatnocharge</span> <div class="text-block"> <h4>Battery Heat Mode</h4> <p>Battery charging stopped due to high device temperature.</p> </div> </div> </li> </ul> </div>
+
+                <div id="alert"> <div id="alertcontent"> <div id="alertnotification"> <ul id="alerts"> <!-- Alerts --> <!-- artf45399: [MR1100][LCDUI] Need to support long-hold gesture for FOTA messages --> <!--artf45995 : [TMB][MR1100] Unread message notification prevents FW upgrade from being installed by long pressing Power button--> <!-- FWdownloading, FWdownloadAvail, FWinstallAvail must be on top --> <li id="FWdownloading" class="softwareAlert"> <h4>Software Update</h4> <div class="load_spinner"></div> <p>Update currently downloading.</p> <p>Operation of the mobile router is not affected, and you may continue to use the mobile router.</p> <div id="download_progress_container"> <span id="fotaDownloadingText" class="m_update_fotaDloadProgressText"></span> </div> </li>PuTTYPuTTY
+
+                <li id="FWdownloadAvail" class="softwareAlert"> <h4>Update Available</h4> <p> <span>Hold power button to start the download.</span> <br> <span class="c_wwan_roaming">Roaming - data charges will apply</span> </p> </li>
+
+                <li id="FWinstallAvail" class="softwareAlert"> <h4>Update Available</h4> <p>Hold power button to start the installation.</p> </li>
+
+                <li id="FWinstallSuppressed" class="softwareAlert"> <h4>Update Available</h4> <p id="fotaChargeToUpdate">To install, battery must be greater than {0}%.</p> </li>
+
+
+
+
+
+
+                <li id="FWpluginCharger" class="softwareAlert"> <h4>SW Update - Low Battery</h4> <p>Connect mobile router to the charger. Update will resume when battery level is at least 20%.</p> </li> <li id="SmsReceived"> <h4><span class="m_sms_unreadMsgs"></span> new unread message(s)</h4> <p>Please use the NETGEAR Mobile app or visit <span class='m_router_hostUrl'></span> to view the message.</p> </li> <li id="SIMnotReady"><h4>SIM Error</h4><p>There is an error with your SIM. Please contact your network provider for support.</p> </li> <li id="SIMNotPresent"><h4>SIM Not Installed</h4><p>Please insert a SIM or check to make sure the SIM is installed properly.</p> </li> <li id="SIMInvalidCard"> <h4>Invalid SIM</h4> <p>Please ensure you are using a SIM provided by your network provider. If there is still a problem, contact your network provider</p> </li> <li id="SIMFailure"> <h4>SIM Failure</h4> <p>Please ensure you are using a SIM provided by your network provider. If there is still a problem, contact your network provider</p> </li> <li id="SIMLocked"> <h4>SIM PIN Locked</h4> <p>Visit <span class="m_router_hostUrl"></span> to unlock your PIN</p> </li> <li id="SIMBlocked"> <h4>SIM Blocked</h4> <p>Please use the NETGEAR Mobile app or visit <span class='m_router_hostUrl'></span> to unlock your PIN</p> </li> <li id="SIMRejected"><h4>SIM Rejected</h4><p>Please contact your network provider</p></li> <li id="SIMMepLocked"> <h4>Device Locked</h4> <p>Please use the NETGEAR Mobile app or visit <span class='m_router_hostUrl'></span> to unlock your mobile router</p> </li> <li id="SIMMepBlocked"><h4>SIM MEP Blocked</h4><p>Please contact your network provider</p></li> <li id="WWANdisconnected"> <h4>Mobile Broadband Disconnected</h4> <p> Your data connection is disconnected.</p> </li> <li id="WWANdisconnectedMIP"> <h4>Mobile Broadband Disconnected</h4> <p>Your data connection is disconnected.</p> <p>Please check APN settings by visiting <span class='m_router_hostUrl'></span> from a web browser.</p> </li>
+
+                        <li id="SetupAPN"> <h4>APN Setup Required</h4> <p>To connect to the internet, please visit <span class='m_router_hostUrl'></span> to set up your APN.</p> </li>
+
+                <li id="WWANdisconnectedRoaming"> <h4>Mobile Broadband Disconnected</h4> <p>Your data connection is disconnected.</p> <p>Roaming - data charges will apply</p> </li> <li id="RoamingStart"> <span class="m_alert_RoamingStart"></span> <h4>International Data Roaming</h4> <p>You are now connected on roaming network. Extra charges may occur.</p> </li> <li id="SchedulerRestrictions"> <h4>Schedule Rules Enabled</h4> <p>Scheduler restrictions are currently active and will prevent access to the Internet. Configure your Scheduler rules under Security settings.</p> </li> <li id="NetSelectionNeeded"> <h4>No Network Found</h4> <p>Please go to AT&amp;T WiFi manager at <span class='m_router_hostUrl'></span> to select a network or change to Auto</p> </li> <li id="BatteryStateCritical"> <h4>Battery Level Critical</h4> <p>Your mobile router battery level is critically low and will power off shortly. Please charge your mobile router to continue using it.</p> </li> <li id="BatteryState"> <h4>Battery Level Low</h4> <p>Your mobile router battery level is low and will power off shortly. Please charge your mobile router to continue using it.</p> </li> <li id="BattSavemode"> <h4>Battery Longevity Mode</h4> <p>Battery charge levels are being reduced to help prolong the life of your battery.</p> </li> <li id="BatteryCharged"> <h4>Battery is Fully Charged</h4> <p>Please remove power.</p> </li> <li id="SMSmemFull"> <h4>SMS Memory Full</h4> <p>Please delete some messages to receive new ones</p> </li>
+
+                <li id="WLANoff"> <h4>WiFi Disabled</h4> <p>Your WiFi Network is disabled.</p> </li> <li id="SetupRequiredOne"> <h4>Setup Required</h4> <p>Connect your WiFi to <br><b><span class="m_wifi_primary_SSID"></span></b><br> Password:<br><b><span class="m_wifi_primary_passPhrase"></span></b></p> </li> <li id="SetupRequiredTwo"> <h4>Setup Required</h4> <p>Please use the NETGEAR Mobile app or visit <span class='m_router_hostUrl'></span> to complete the setup.</p> </li> <!-- this data usage alert is used for generic and generic data fallback --> <li id="DataUsageWarning"> <h4>Data Alert</h4> <p id="alert_manage_my_account" class="account_type_default">
+                                You have less than <span class='m_datausage_dataRemainingString'></span> remaining in your data plan.
+                        </p> </li> </ul>
+
+        <div id="fota"> <div id="fotaProgress"> <div id="fotaBar"></div> </div> </div>
+
+</div> </div> <div id="pager">
+                        <span id='currentpage'></span> of <span id='totalpages' class='totalpages'></span>
+                    </div> </div> <div id="status" class="c_sim_status"> <div class="c_wwan_ratIcon 4g c_power_battChargeAlgorithm Normal c_power_charging false"> <span id="signal_icons"> <div class="c_wwan_roamingText">roaming</div> <div class="m_wwan_signalIcon"></div> </span> <span class="m_offload_offloadSignals">wifi4</span> <span class="etherneticon">ethernet</span> <span class="ltestatus c_wwan_currentNWserviceType">
+
+                                <span class="m_wwan_ratIcon"></span> <span id="dataRxIcon">datadl</span> <span id="dataTxIcon">dataul</span>
+
+                        </span> <span class="c_router_usbTetheringActive">tethered</span> <span class="c_ui_lcd_chargingOnly">charging</span> <span id="chargingReduced">heatcharge</span> <span id="chargingStopped">heatnocharge</span> </div> <p class="m_wwan_carrier"></p> </div> <div id="homescreen"> <div id="ltedata" class="ltedata c_datausage_datausagestate Postpaid c_datausageManager_masterDataClass"> <div class="attData"> <div class="datausage_usageunavailable"> <span><span id='wifi_count' class='wifi_count m_totalClientCount'></span><span class='wifi_count_label'> Devices connected</span></span> <hr> <span class="m_datausage_dataTransferredUnavailableText"></span> </div> <div class="datausage_gophone"> <span><span id='wifi_count' class='wifi_count m_totalClientCount'></span><span class='wifi_count_label'> Devices connected</span></span> <hr> <span id="goPhone_message">To check your data balance, go to att.com/myprepaid</span> </div> <div class="datausage_roaming"> <span><span id='wifi_count' class='wifi_count m_totalClientCount'></span><span class='wifi_count_label'> Devices connected</span></span> <hr> <span class="m_datausage_dataTransferredRoamingText"></span> </div> <div id="data_display" class="datausage_postpaid"> <span><span id='wifi_count' class='wifi_count m_totalClientCount'></span><span class='wifi_count_label'> Devices connected</span></span> <hr> <div id="data" class="c_datausage_hasLimit"> <h3><span id="dataTotalPercentage" class="c_datausage_dataUsageAccountState"><span class="m_datausage_dataUsagePercentage"></span>%</span><span> Used</span></h3> <p class="c_datausage_rolloverExists"><span class="m_datausage_dataTransferredText"></span> of <span class="m_datausage_dataLimit"></span><span class="rolloverExists">*</span></p> </div> <div id="daysleft"> <h3><span class="m_datausage_daysLeft"></span></h3> <p>Days left</p> </div> <div id="dataLegend" class="c_datausage_usageOverWarningThreshold"> <p id="rolloverData"><span class="m_datausage_rolloverDataString"></span></p> <div id="usageOverNote" class="c_datausage_usageOverPlanThreshold"> <span id="dataplanexceed"><span class="dataplanexceed"></span>Data plan exceeded</span> <span id="datalimitreached"><span class="datalimitreached"></span>Data limit reached</span> <!-- <ol id="datalimitnotreached" class="c_datausage_dataShareEnabled">
+                                            <li id="legendDevice"><span class="legendDevice"></span>My Device</li>
+                                            <li id="legendOthers"><span class="legendOthers"></span>Other(s)</li>
+                                        </ol> --> </div> </div> </div> </div> <div class="telstraData"> <div id="data_display" class="datausage_postpaid"> <span><span id='wifi_count' class='wifi_count m_totalClientCount'></span><span class='wifi_count_label'> Devices connected</span></span> <hr> <div id="data">
+                                    <h3><span class='m_datausage_dataTransferredText'></span></h3><p>of <span class='m_datausage_dataLimit'></span> used</p>
+                                </div> <div id="daysleft">
+                                    <h3><span class='m_datausage_daysLeft'></span></h3><p>Days left</p>
+                                </div> <p>*Estimated data</p> <p>Check <b>My Account</b></p> </div> <div class="datausage_nontelstrasim"> <span class="wifi_count m_totalClientCount"></span> <span class="wifi_count_label">&nbsp;Devices connected</span> <hr> <span>Non Telstra SIM detected</span> </div> <div class="datausage_detectingservice"> <span>Detecting service</span> </div> <div class="datausage_usageunavailable"> <span class="wifi_count m_totalClientCount"></span> <span class="wifi_count_label">&nbsp;Devices connected</span> <hr> <span>Data usage info unavailable at this time</span> </div> <div class="datausage_devicenonactive"> <span class="wifi_count m_totalClientCount"></span> <span class="wifi_count_label">&nbsp;Devices connected</span> <hr> <span>To Activate SIM, connect to this device's WiFi network &amp; visit <span class="m_router_hostUrl"></span>&nbsp;&nbsp;Once activated, restart this device.</span> </div> <div class="datausage_prepaidonly"> <hr> <p>PRE-PAID</p> <!-- <p>A Pre-Paid SIM has been detected.</p>
+                                <p>Please visit <span class="m_router_hostName"></span>.<span class="m_router_domainName"></span> for more info.</p> --> <div id="datausage_prepaid_data"> <h3><span id="data_usage_display_data_text" class="m_datausage_serverDataRemainingString"></span>&nbsp;/&nbsp;<span class="m_datausage_daysLeftText"></span>remaining*</h3> </div> <div id="datausage_prepaid_description">*Data current as of approx. 2 Hrs ago</div> <div class="wifi_count m_totalClientCount"></div> <div class="wifi_count_label">Connected</div> </div> </div> <div class="genericData"> <div id="data_display" class="datausage_postpaid c_datausage_hasDataLimit"> <span><span id='wifi_count' class='wifi_count m_totalClientCount'></span><span class='wifi_count_label'> Devices connected</span></span> <hr> <div id="data">
+                                    <h3><span class='m_datausage_dataTransferredText'></span></h3><p>of <span class='m_datausage_dataLimit'></span> used</p>
+                                </div> <div id="daysleft">
+                                    <h3><span class='m_datausage_daysLeft'></span></h3><p>Days left</p>
+                                </div> <p>*Estimated data</p> </div> <div class="roamingdata"> <span><span id='wifi_count' class='wifi_count m_totalClientCount'></span><span class='wifi_count_label'> Devices connected</span></span> <hr> <span class="m_datausage_dataTransferredRoamingText"></span> </div> </div> </div> <div class="ethernetdata"> <span><span id='wifi_count' class='wifi_count m_totalClientCount'></span><span class='wifi_count_label'> Devices connected</span></span> <hr> <!-- <h3><span class="m_ethernet_offloadDataTransferredText"></span></h3>
+                        <p>used since <span class="m_ethernet_offloadingtime"></span></p> -->
+
+                            <h3><span class='dataOffloadingText'>Data Offloading</span></h3><p>since <span class='m_ethernet_offloadingtime'></span></p>
+                            <p>Connected to <br>LAN</p>
+
+                    </div> <div class="wifidata"> <span><span id='wifi_count' class='wifi_count m_totalClientCount'></span><span class='wifi_count_label'> Devices connected</span></span> <hr> <!-- <h3><span class="m_offload_offloadDataTransferredText"></span></h3>
+                        <p>used since <span class="m_offload_offloadingtime"></span></p> -->
+
+                            <h3><span class='dataOffloadingText'>Data Offloading</span></h3><p>since <span class='m_offload_offloadingtime'></span></p>
+
+                        <p>Connected to <br><span class="m_offload_offloadSSID"></span></p> </div> <div id="home_pagination"> <div class="float_center"> <ul class="paginationList"> <li id="home_pagination_active"></li> <li id="home_screen_primary_wifi_pagination_inactive"></li> <li id="home_screen_secondary_wifi_pagination_inactive"></li> <li id="home_screen_guestAP_wifi_pagination_inactive"></li>
+
+                            </ul> </div> </div> </div> <div id="wifiscreenPrimary"> <dl> <dt id="wifi_primary_headerText" class="m_wifi_primary_headerText"></dt> <dd id="ssid_primary" class="m_wifi_primary_SSID"></dd> <dt id="pass_primary_label">Password</dt> <dd id="pass_primary" class="m_wifi_primary_passPhrase"></dd> </dl> <div id="primary_pagination"> <div class="float_center"> <ul class="paginationList"> <li id="primary_screen_home_pagination_inactive"></li> <li id="primary_wifi_pagination_active"></li> <li id="primary_screen_secondary_wifi_pagination_inactive"></li> <li id="primary_screen_guestAP_wifi_pagination_inactive"></li>
+
+                            </ul> </div> </div> </div> <div id="wifiscreenSecondary"> <dl> <dt id="wifi_secondary_headerText" class="m_wifi_secondary_headerText"></dt> <dd id="ssid_secondary" class="m_wifi_secondary_SSID"></dd> <dt id="pass_secondary_label">Password</dt> <dd id="pass_secondary" class="m_wifi_secondary_passPhrase"></dd> </dl> <div id="pagination_secondary"> <div class="float_center"> <ul class="paginationList"> <li id="secondary_screen_home_pagination_inactive"></li> <li id="secondary_screen_primary_wifi_pagination_inactive"></li> <li id="secondary_wifi_pagination_active"></li> <li id="secondary_screen_guestAP_wifi_pagination_inactive"></li>
+
+                            </ul> </div> </div> </div> <div id="wifiscreenGuestAP"> <dl> <dt id="wifi_guestAP_headerText" class="m_wifi_guestAP_headerText"></dt> <dd id="ssid_guestAP" class="m_wifi_guestAP_SSID"></dd> <dt id="pass_guestAP_label">Guest Password</dt> <dd id="pass_guestAP" class="m_wifi_guestAP_passPhrase"></dd> </dl> <div id="pagination_guest"> <div class="float_center"> <ul class="paginationList"> <li id="guestAP_screen_home_pagination_inactive"></li> <li id="guestAP_screen_primary_wifi_pagination_inactive"></li> <li id="guest_screen_secondary_wifi_pagination_inactive"></li> <li id="guestAP_wifi_pagination_active"></li>
+
+                            </ul> </div> </div> </div>
+
+            </div> <div id="graphs" class="c_datausage_datausagestate Postpaid c_datausageManager_masterDataClass"> <div class="graph_container c_power_batteryState" id="graph_power_container"> <div class="graph c_power_charging" id="graph_power"></div> </div> <div class="graph_container c_datausage_dataUsageAccountState" id="graph_data_container"> <div class="graph" id="graph_data"></div> </div> <div id="graph_mask"></div> </div> <div id="temp_critical"> <div id=""> <span id="critical_temp_header">Temperature Critical</span><br> <span id="critical_temp_description">Remove the mobile router from the charger.</span> </div> </div> <div id="shutdown"> <p>Shutting Down...</p> </div> </div>
+
+        <div id="factoryreset"> <h3>Factory Reset in Progress</h3> <p>Please do not power off</p> </div>
+
+        <div id="lpm"> <span id="batteryIcon"> </span> <div id="normalCharge_div"> <div id="lpm_background"> </div> <div id="lpm_charge"> </div> </div> <div id="lowCharge_div"> <div id="backgroundLow"> </div> <div id="chargeLow"> </div> </div> <div id="charging_div"> <span id="charging_img"> </span> </div> </div>
+
+                <div id="fwinstalling"> <h3>Software Update</h3> <p>The mobile router will restart multiple times.<br>Please do not power off or unplug your hotspot.</p> </div>
+
+        <script>
+            //
+            var checkTime = 50;
+            var maxLoadTime = 5000;
+            var loadStartTime = new Date();
+            var loadTime = 0;
+
+            function _loadCheck() {
+                var nextTime = new Date();
+                loadTime = nextTime - loadStartTime;
+                if(typeof window.netgearLoaded !== "undefined" && document.styleSheets.length > 1 && document.styleSheets[document.styleSheets.length-1].rules.length > 10) {
+                    clearInterval(loadInterval);
+                    // SBM 16751 [AC790S][TouchUI] Lots of screen artifacts during initialization
+                    setTimeout(function(){
+                        //document.getElementById('loading').className = 'loaded';
+                    },500);
+                    console.log(' .......................................... loaded successfully');
+                }
+                else {
+                    console.log(' .... Not loaded ... ' + loadTime + 'stylesheet list length :' + document.styleSheets.length);
+                    if(loadTime > maxLoadTime) {
+                        console.log(' .......................................... load took too long, reloading');
+                        window.location.reload(true);
+                    }
+                }
+            }
+            var loadInterval = setInterval(_loadCheck, checkTime);
+            console.log('done load checker starting... ');
+            //
+        </script>
+    </body>

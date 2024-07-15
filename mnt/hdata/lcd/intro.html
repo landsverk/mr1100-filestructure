@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Strict//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <style>
+            html,body {
+                overflow:hidden;
+                margin:0;
+                background-color:#42164f;
+            }
+            body {
+                width: 320px;
+                height: 240px;
+            }
+
+            #active {
+                width: 320px;
+                height: 240px;
+                background-repeat: no-repeat;
+            }
+
+            #active.loading {
+                background-image: url('images/delay.gif');
+            }
+
+            #active.afterAnim img {
+                display:none;
+            }
+
+            #active img {
+                position:absolute;
+                left:0;
+                top:0;
+            }
+            /*.transition .active {
+                opacity: 0;
+                -webkit-transition: opacity 0.5s;
+            }*/
+
+            iframe {
+                position:absolute;
+                left:0;
+                top:0;
+                width:320px;
+                height:240px;
+                display:none;
+                z-index:1100;
+                border:none;
+            }
+            iframe.loaded {
+                display:block;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="active" class='active'></div>
+        <iframe id="uiFrame"></iframe>
+        <script type="text/javascript">
+
+            var $active = document.getElementById("active");
+            var $uiFrame = document.getElementById("uiFrame");
+
+            function pollReady() {
+                var tester = new Image();
+                tester.addEventListener('load', function() {
+                    startUI();
+                });
+                tester.addEventListener('error', function() {
+                    setTimeout(pollReady, 500);
+                });
+                tester.src = "http://localhost/static/lcd/images/spinner.gif";
+            }
+
+            function startUI() {
+                console.log("starting ui ... ");
+                var tgt = window.location.search.slice(window.location.search.indexOf('?') + 1);
+                $uiFrame.src = tgt;
+            }
+
+            function runAnimation() {
+                var img = document.createElement("img");
+                img.addEventListener("load",function() {
+                    setTimeout( function() { $active.className = "active loading";}, 500);
+                });
+                img.src = "images/guibg.gif";
+                $active.appendChild(img);
+                setTimeout(unloadAnim, 3000);
+            }
+
+            function unloadAnim() {
+                $active.className = "active loading afterAnim";
+            }
+
+
+            function startTransition() {
+
+                $uiFrame.focus();
+                $uiFrame.contentWindow.focus();
+                $uiFrame.className = "loaded";
+                $active.className = "active afterAnim";
+            }
+
+            runAnimation();
+            pollReady();
+
+            window.addEventListener("message", function(e) {
+                setTimeout(startTransition, 6000);
+            });
+
+        </script>
+    </body>
+</html>
